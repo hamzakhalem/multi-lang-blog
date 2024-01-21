@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('tags_translations', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('tag_id')->unsigned();
+            $table->unsignedBigInteger('tag_id');
             $table->string('locale')->index();
             $table->string('title')->nullable();
             $table->foreign('tag_id')->references('id')->on('tags')->onDelete('cascade');
