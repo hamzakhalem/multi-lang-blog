@@ -13,7 +13,8 @@ return [
     |
     */
 
-    'dashboard' => 'لوحة تحكم',
-    'settings' => 'اعدادات',
+    'dashboard' => 'Dashboard',
+    'settings' => 'Settings',
+
 
 ];
