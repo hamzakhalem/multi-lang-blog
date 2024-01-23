@@ -22,3 +22,10 @@ Route::prefix('dashboard')->group(function () {
         return view('dashboard.settings');
     })->name('dashboard.settings');
 });
+
+
+// Route::group(['prefix'=>'dashboard' , 'as'=> 'dashboard'], function(){
+//     Route::get('/settings', function () {
+//         return view('dashboard.settings');
+//     })->name('settings');
+// });
