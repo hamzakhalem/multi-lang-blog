@@ -15,6 +15,10 @@ return new class extends Migration
             $table->increments('id');
             $table->string('logo')->nullable();
             $table->string('favicon')->nullable();
+            $table->string('facebook')->nullable();
+            $table->string('instgram')->nullable();
+            $table->string('phone')->nullable();
+            $table->string('email')->nullable();
             $table->timestamps();
             $table->softdeletes();
         });

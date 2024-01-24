@@ -17,7 +17,7 @@
     <div class="container-fluid">
 
         <div class="animated fadeIn">
-            <form  method="post" enctype="multipart/form-data">
+            <form action="{{ route('dashboard.settings.update') }}" method="post" enctype="multipart/form-data">
                 @csrf
                 <div class="row">
                     @if ($errors->any())

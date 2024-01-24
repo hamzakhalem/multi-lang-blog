@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\Dashboard\SettingController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -21,6 +21,7 @@ Route::prefix('dashboard')->group(function () {
     Route::get('/settings', function () {
         return view('dashboard.settings');
     })->name('dashboard.settings');
+    Route::post('/settings/update', [SettingController::class, 'update'])->name('dashboard.settings.update');
 });
 
 
